@@ -30,8 +30,7 @@ class FulfillmentInbound extends Client {
       'query' => $queryParams,
     ]);
   }
-
-
+  
   public function getInboundGuidanceAsync($queryParams = [])
   {
     return $this->sendAsync("/fba/inbound/v0/itemsGuidance", [
